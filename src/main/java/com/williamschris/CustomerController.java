@@ -24,14 +24,7 @@ public class CustomerController {
 
     @RequestMapping("/customer")
     public List<Customer> getCustomers(){
-        List<Customer> customers = new ArrayList<>();
-
-        for(long i = 1; i < customerIdGenerator; ++i){
-            Customer customer = customerMap.get(String.valueOf(i));
-            customers.add(customer);
-        }
-
-        return customers;
+        return new ArrayList<>(customerMap.values());
     }
 
     @RequestMapping(value = "/customer/{id}", method = RequestMethod.DELETE)
