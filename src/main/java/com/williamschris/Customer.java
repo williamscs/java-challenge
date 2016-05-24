@@ -1,47 +1,43 @@
 package com.williamschris;
 
-public class Customer {
+class Customer {
 
-  private Long id;
+    private Long id;
 
-  private String firstName;
+    private String firstName;
 
-  private String lastName;
+    private String lastName;
 
-  public Long getId() {
+    public Long getId() {
 
-    return id;
+        return id;
 
-  }
+    }
 
-  public void setId(Long id) {
+    void setId(Long id) {
+        this.id = id;
+    }
 
-    this.id = id;
-
-  }
-
-  public String getFirstName() {
+    public String getFirstName() {
 
     return firstName;
 
-  }
+    }
 
-  public void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
 
     this.firstName = firstName;
 
-  }
+    }
 
-  public String getLastName() {
+    public String getLastName() {
+        return lastName;
+    }
 
-    return lastName;
-
-  }
-
-  public void setLastName(String lastName) {
+    public void setLastName(String lastName) {
 
     this.lastName = lastName;
 
-  }
+    }
 
 }
